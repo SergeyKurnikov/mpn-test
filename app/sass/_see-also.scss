@@ -1,0 +1,125 @@
+.cards{
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards__item{
+  display: flex;
+  flex-direction: column;
+  width: 261px;
+  //height: 180px;
+}
+
+.card__img{
+  width: 261px;
+  height: 180px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 47.69%, rgba(0, 0, 0, 0.46) 79.98%),
+              url('../img/see-also1.png') 0 0 no-repeat;
+  background-blend-mode: screen;
+  background-size: cover;
+  margin-bottom: 16px;
+}
+
+.card__img2{
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 47.69%, rgba(0, 0, 0, 0.46) 79.98%),
+  url('../img/see-also2.png') 0 0 no-repeat;
+}
+
+.card__img3{
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 47.69%, rgba(0, 0, 0, 0.46) 79.98%),
+  url('../img/see-also3.png') 0 0 no-repeat;
+}
+
+.card__img4{
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 47.69%, rgba(0, 0, 0, 0.46) 79.98%),
+  url('../img/see-also4.png') 0 0 no-repeat;
+}
+
+.card__icons{
+  display: flex;
+  margin: 8px 0 0 8px;
+  height: 32px;
+}
+
+.card__icon-wrap{
+  border: 1px solid $rocket-icon;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  background-color: $rocket-icon;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.red{
+  border: 1px solid $crown-icon;
+  background-color: $crown-icon;
+  margin-left: -12px;
+}
+
+.orange{
+  border: 1px solid $percent-icon;
+  background-color: $percent-icon;
+}
+
+
+.card__img-price, .card__img-numb {
+  color: $text-color-light;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.card__img-price{
+  margin: 88px 0 0 16px;
+}
+
+.card__img-numb{
+  margin: 4px 0 0 16px;
+}
+
+.card__title{
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 4px;
+  color: $text-color-dark;
+}
+
+.card__adress{
+  color: $text-color-dark;
+}
+
+.metro__list-mt2{
+  margin-top: 2px;
+}
+
+.color-yellow:not(:last-child){
+  margin-right: 7px;
+}
+
+.color-yellow:before{
+  width: 8px;
+  height: 8px;
+  background: $point-metro2;
+  margin-right: 8px;
+}
+
+.list-man:before{
+  margin-right: 0;
+  background: url('../img/man.svg') 0 0 no-repeat;
+}
+
+.text-size14 {
+  font-size: 14px;
+  line-height: 16px;
+  margin-right: 0;
+  border: none;
+  color: $text-color-dark;
+}
+
+.text-size14:hover {
+  color: $text-color-dark;
+  border: none;
+}
