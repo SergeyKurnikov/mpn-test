@@ -10,36 +10,36 @@
 </head>
 <body>
     <section class="welcome">
+        <header class="header">
+            <a href="#" class="logo"><img src="img/logo.svg" alt="Логотип Headliner"></a>
+            <div class="header__menu">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__item-link" data-scroll-to="2"
+                            >Описание</a
+                            >
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__item-link" data-scroll-to="3"
+                            >Локация</a
+                            >
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__item-link" data-scroll-to="4"
+                            >Смотрите также</a
+                            >
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__item-link" data-scroll-to="5"
+                            >Запись на просмотр</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
         <div class="container container-bgc">
-            <header class="header">
-                <a href="#" class="logo"><img src="img/logo.svg" alt="Логотип Headliner"></a>
-                <div class="header__menu">
-                    <nav class="nav">
-                        <ul class="nav__list">
-                            <li class="nav__item">
-                                <a href="#" class="nav__item-link" data-scroll-to="2"
-                                >Описание</a
-                                >
-                            </li>
-                            <li class="nav__item">
-                                <a href="#" class="nav__item-link" data-scroll-to="3"
-                                >Локация</a
-                                >
-                            </li>
-                            <li class="nav__item">
-                                <a href="#" class="nav__item-link" data-scroll-to="4"
-                                >Смотрите также</a
-                                >
-                            </li>
-                            <li class="nav__item">
-                                <a href="#" class="nav__item-link" data-scroll-to="5"
-                                >Запись на просмотр</a
-                                >
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
             <h1 class="welcome__title">Многофункциональный жилой квартал <span class="welcome__title-uppercase">Headliner</span></h1>
             <h3 class="welcome__subtitle">Сдача — 4 кв. 2022, есть сданные</h3>
         </div>
@@ -83,10 +83,30 @@
     <section class="cta">
         <div class="container">
             <div class="cta-block">
-                <h2 class="section-title">Запишитесь на просмотр и оцените<br> всё сами!</h2>
+                <h2 class="section-title">Запишитесь на просмотр и оцените всё сами!</h2>
                 <button class="cta-btn">Запись на просмотр</button>
             </div>
         </div>
+    </section>
+    <section class="location">
+        <div class="container">
+            <h2 class="section-title section-title__loc">Локация</h2>
+            <h3 class="location__adress">Москва, ЦАО, Пресненский, Шмитовский проезд, вл. 39</h3>
+            <ul class="adress__list">
+                <li class="adress__list-item">
+                    <a href="#" class="adress__list-ref">Шелипиха</a>
+                    <span class="adress__list-text">5 мин пешком</span>
+                </li>
+                <li class="adress__list-item">
+                    <a href="#" class="adress__list-ref">Фили</a>
+                    <span class="adress__list-text">6 мин на транспорте</span>
+                </li>
+            </ul>
+            <div class="location__map"></div>
+        </div>
+    </section>
+    <section class="see-also">
+
     </section>
 </body>
 </html>

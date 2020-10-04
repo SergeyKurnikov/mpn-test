@@ -1,15 +1,15 @@
 .welcome{
   height: 636px;
   background-color: $bg-color-dark;
-/*  background-image: url('../img/header-slide1.jpg');
-  background-repeat: no-repeat;
-  background-position: top right;*/
-}
-
-.container-bgc{
   background-image: url('../img/header-slide1.jpg');
   background-repeat: no-repeat;
   background-position: top right;
+}
+
+.container-bgc{
+  //background-image: url('../img/header-slide1.jpg');
+  //background-repeat: no-repeat;
+  //background-position: top right;
   //opacity: 0.8;
   height: 636px;
 }
@@ -21,7 +21,6 @@
   color: $text-color-light;
   width: 828px;
   margin-top: 140px;
-  margin-left: 168px;
 }
 
 .welcome__title-uppercase{
@@ -31,5 +30,4 @@
   line-height: 24px;
   color: $text-color-light;
   margin-top: 16px;
-  margin-left: 168px;
 }

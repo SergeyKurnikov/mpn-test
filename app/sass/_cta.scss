@@ -5,19 +5,20 @@
 
 .cta-block{
   display: flex;
-  //justify-content: space-between;
+  justify-content: space-between;
   margin-bottom: 56px;
   margin-top: 56px;
   align-items: center;
 }
 
 .section-title{
-  margin-right: 298px;
+  //margin-right: 298px;
   font-family: 'Roboto-Light';
   font-weight: 300;
   font-size: 32px;
   line-height: 40px;
   color: $text-color-light;
+  width: 542px;
 }
 
 .cta-btn{
