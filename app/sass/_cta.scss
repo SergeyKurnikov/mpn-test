@@ -2,3 +2,38 @@
   height: 192px;
   background-color: $bg-color-dark;
 }
+
+.cta-block{
+  display: flex;
+  //justify-content: space-between;
+  margin-bottom: 56px;
+  margin-top: 56px;
+  align-items: center;
+}
+
+.section-title{
+  margin-right: 298px;
+  font-family: 'Roboto-Light';
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 40px;
+  color: $text-color-light;
+}
+
+.cta-btn{
+  border: 1px solid $text-color-light;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 264px;
+  height: 56px;
+  background-color: transparent;
+  color: $text-color-light;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.cta-btn:hover{
+  background-color: $text-color-light;
+  transition: all 0.7s ease;
+  color: $text-color-dark;
+}
