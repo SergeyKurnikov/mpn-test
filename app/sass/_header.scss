@@ -1,0 +1,35 @@
+.header{
+  height: 80px;
+  border-bottom: 1px solid $line-color;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+ //position: absolute;
+ //z-index: 10000;
+ //top: 0;
+ //left: 50%;
+}
+
+.nav__list{
+  display: flex;
+  margin-right: 24px;
+}
+
+.nav__item{
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.nav__item:not(:last-child){
+  margin-right: 40px;
+}
+
+.nav__item-link{
+  color: $text-color-light;
+}
+
+.nav__item:hover{
+  border-bottom: 2px solid $hover-line;
+  cursor: pointer;
+}

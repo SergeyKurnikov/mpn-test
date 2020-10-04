@@ -1,0 +1,17 @@
+//breakpoints
+$tablets: 768px;
+$phones: 480px;
+$smallphones: 375px;
+
+//blocks
+@import 'mixins';
+@import 'base';
+@import 'variables';
+@import 'header';
+@import 'welcome';
+//@import 'popular';
+//@import 'collaboration';
+//@import 'sale';
+//@import 'promo';
+//@import 'dellivery';
+//@import 'feedback';

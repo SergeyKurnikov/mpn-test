@@ -21,5 +21,8 @@
     "gulp-uglify-es": "^2.0.0",
     "jquery": "^3.5.1",
     "normalize.css": "^8.0.1"
+  },
+  "dependencies": {
+    "mobile-detect": "^1.4.4"
   }
 }
