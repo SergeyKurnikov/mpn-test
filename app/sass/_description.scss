@@ -1,0 +1,80 @@
+.description{
+  background-color: $bg-color-light;
+}
+
+.btn__list{
+  display: flex;
+  margin-top: 56px;
+}
+
+.btn__item:not(:last-child){
+  margin-right: 16px;
+}
+
+.btn__item-push{
+  font-size: 20px;
+  line-height: 28px;
+  width: 211px;
+  height: 56px;
+  background-color: $btn-border;
+  border: 1px solid $btn-border;
+  border-radius: 28px;
+}
+
+.btn__item-push:hover{
+  background-color: $bg-color-light;
+  transition: all 0.7s ease;
+}
+
+.btn-active{
+  background-color: $bg-color-light;
+}
+
+.description__lists{
+  margin-top: 32px;
+  display: flex;
+  margin-bottom: 56px;
+}
+
+.pros__list{
+  margin-right: 161px;
+}
+
+.pros__list-item, .cons__list-item{
+  display: flex;
+  align-items: center;
+  //width: 401px;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.op-05{
+  opacity: 0.5;
+}
+
+.pros__list-item:not(:last-child), .cons__list-item:not(:last-child){
+  margin-bottom: 25px;
+}
+
+
+.pros__list-item:before, .cons__list-item:before{
+  width: 32px;
+  height: 32px;
+  background: $hover-line;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 24px;
+  font-size: 24px;
+}
+
+.pros__list-item:before{
+  content: "+";
+}
+
+.cons__list-item:before{
+  content: '\2013';
+  opacity: 1;
+}
+
