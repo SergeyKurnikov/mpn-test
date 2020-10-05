@@ -1,0 +1,48 @@
+.footer{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 230px;
+}
+.footer__info{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  width: 1140px;
+}
+
+.new-build__title, .popular__title, .ad__title{
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.copyraight__title, .copyraight__subtitle{
+  line-height: 24px;
+  font-size: 16px;
+}
+
+.new-build__item, .popular__item, .ad__item{
+
+}
+
+.new-build__item-link, .popular__item-link, .ad__item-tel, .ad__item-mail{
+  color: $text-color-dark;
+  opacity: 0.5;
+}
+
+.new-build__item-link:hover, .popular__item-link:hover, .ad__item-tel:hover, .ad__item-mail:hover{
+  color: $bg-color-dark;
+  opacity: 1;
+  transition: all 0.7s ease;
+}
+
+.new-build__item:not(:last-child), .popular__item:not(:last-child), .ad__item:not(:last-child){
+  margin-bottom: 8px;
+}
+
+.copyraight__subtitle{
+  width: 261px;
+}

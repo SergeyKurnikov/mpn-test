@@ -31,7 +31,10 @@ body, html {
   overflow: hidden;
   min-height: 100%;
   position: relative;
-  opacity: 0;
+  //opacity: 0;
+}
+.content{
+  padding-bottom: 240px;
 }
 
 .visible{
