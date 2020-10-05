@@ -192,7 +192,23 @@
         </div>
     </section>
     <section class="section-form">
-
+        <div class="container">
+            <h2 class="section-title section-title__mt56">Запишитесь на просмотр и оцените всё сами!</h2>
+            <form class="form" id="mainform">
+                <input class="form__input" type="text" name="username" id="username"  placeholder="Как вас зовут?">
+                <div class="ddl">
+                    <select class="form__input ddl__date" name="date" id="date"></select>
+                    <select class="form__input ddl__time" name="time" id="time"></select>
+                </div>
+                <input class="form__input form__input-mb24 " name="phone" type="text" placeholder="Ваш телефон" id="tel">
+                <label class="form__checkbox" for="notcall">
+                    <input type="checkbox" name="notcall" class="form__checkbox-el" id="notcall">
+                    <div class="form__checkbox-fake"></div>
+                    <div class="form__radio-text">Напомните мне за 2 часа до визита</div>
+                </label>
+                <button class="cta-btn cta-btn__send">Отправить</button>
+            </form>
+        </div>
     </section>
 </body>
 </html>

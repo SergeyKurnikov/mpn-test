@@ -1,0 +1,113 @@
+.section-form{
+  background-color: $bg-color-dark;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-title__mt56{
+  margin-top: 56px;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  width: 542px;
+  margin-top: 16px;
+}
+
+.form__input{
+  text-align: left;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid $hover-line;
+  outline: none;
+  padding: 15px 0;
+  color: $text-color-light;
+  margin-bottom: 16px;
+}
+
+.form__checkbox{
+  display: flex;
+}
+
+.cta-btn__send{
+  margin-bottom: 56px;
+}
+
+.form__input::placeholder{
+  color: $text-color-light;
+  opacity: 0.5;
+}
+
+.ddl{
+  display: flex;
+  justify-content: space-between;
+}
+.ddl__date, .ddl__time{
+  width: 261px;
+  appearance: none;
+  background: url('../img/ddl-arrow.svg') right / 8px no-repeat;
+}
+
+.form__input-mb24{
+  margin-bottom: 24px;
+}
+
+.form__checkbox{
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.form__checkbox-el{
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.form__checkbox-fake {
+  width: 16px;
+  height: 16px;
+  border: 1px solid $text-color-light;
+
+  position: relative;
+  margin-right: 12px;
+}
+
+.form__checkbox-el:checked+.form__checkbox-fake:after {
+  content: "";
+  background: url(../img/checked.svg) 50% no-repeat transparent;
+  background-size: contain;
+  width: 9px;
+  height: 5.5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.form__radio-text{
+  line-height: 16px;
+  color: $text-color-light;
+}
+
+.cta-btn__send{
+  width: 173px;
+  height: 56px;
+  background-color: $text-color-light;
+  opacity: 0.5;
+  color: $bg-color-dark;
+}
+
+.cta-btn__send:hover {
+  opacity: 1;
+  transition: all 0.7s ease;
+  color: $bg-color-dark;
+}
+
+/*
+.ddl__date{
+  margin-right: 20px;
+}*/
