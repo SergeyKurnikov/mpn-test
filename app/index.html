@@ -12,7 +12,7 @@
     <div class="wrapper">
         <div class="content">
             <section class="welcome">
-            <header class="header">
+                <header class="header">
                 <a href="#" class="logo"><img src="img/logo.svg" alt="Логотип Headliner"></a>
                 <div class="header__menu">
                     <nav class="nav">
@@ -41,11 +41,40 @@
                     </nav>
                 </div>
             </header>
-            <div class="container container-bgc">
+                <div class="container container-bgc">
                 <h1 class="welcome__title">Многофункциональный жилой квартал <span class="welcome__title-uppercase">Headliner</span></h1>
                 <h3 class="welcome__subtitle">Сдача — 4 кв. 2022, есть сданные</h3>
             </div>
-        </section>
+                <div class="slider">
+                    <input class="slider__nav" type="radio" name="slider" title="slide1" checked="checked"/>
+                    <input class="slider__nav" type="radio" name="slider" title="slide2"/>
+                    <input class="slider__nav" type="radio" name="slider" title="slide3"/>
+                    <input class="slider__nav" type="radio" name="slider" title="slide4"/>
+                    <input class="slider__nav" type="radio" name="slider" title="slide5"/>
+                    <div class="slider__inner">
+                        <div class="slider__contents">
+                            <div class="slider__image slider__image1"></div>
+                            <!--<img src="img/header-slide1.jpg" alt="" class="slider__image">-->
+                        </div>
+                        <div class="slider__contents">
+                            <div class="slider__image slider__image2"></div>
+                            <!--<img src="img/header-slide2.jpg" alt="" class="slider__image">-->
+                        </div>
+                        <div class="slider__contents">
+                            <div class="slider__image slider__image3"></div>
+                            <!--<img src="img/header-slide1.jpg" alt="" class="slider__image">-->
+                        </div>
+                        <div class="slider__contents">
+                            <div class="slider__image slider__image4"></div>
+                            <!--<img src="img/header-slide2.jpg" alt="" class="slider__image">-->
+                        </div>
+                        <div class="slider__contents">
+                            <div class="slider__image slider__image5"></div>
+                            <!--<img src="img/header-slide2.jpg" alt="" class="slider__image">-->
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section class="description">
                 <div class="container">
                     <div class="btn__menu">
@@ -104,7 +133,8 @@
                             <span class="metro__list-text">6 мин на транспорте</span>
                         </li>
                     </ul>
-                    <div class="location__map"></div>
+                    <!--<div class="location__map"></div>-->
+                    <div id="map" class="map"></div>
                 </div>
             </section>
             <section class="see-also">
@@ -278,5 +308,7 @@
             </div>
         </footer>
     </div>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="js/app.min.js"></script>
 </body>
 </html>
