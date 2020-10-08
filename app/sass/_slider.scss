@@ -18,6 +18,11 @@ $active-color: #FFFFFF;
   //width: 991px;
   margin-right: 715px;
   height: 108px;
+  @include tablets {
+    margin-left: 180px;
+    margin-right: 0;
+    justify-content: flex-start;
+  }
 
   &__nav {
     width: $radioBtn-size;
@@ -77,26 +82,41 @@ $active-color: #FFFFFF;
     background-position: top right;
     width: 100%;
     height: 100%;
+    @include tablets {
+      background-image: url('../img/src/header-slide1-tb.jpg');
+    }
   }
   &__image2{
     background-image: url('../img/header-slide2.jpg');
     background-repeat: no-repeat;
     background-position: top right;
+    @include tablets {
+      background-image: url('../img/src/header-slide2-tb.jpg');
+    }
   }
   &__image3{
     background-image: url('../img/header-slide1.jpg');
     background-repeat: no-repeat;
     background-position: top right;
+    @include tablets {
+      background-image: url('../img/src/header-slide1-tb.jpg');
+    }
   }
   &__image4{
     background-image: url('../img/header-slide2.jpg');
     background-repeat: no-repeat;
     background-position: top right;
+    @include tablets {
+      background-image: url('../img/src/header-slide2-tb.jpg');
+    }
   }
   &__image5{
     background-image: url('../img/header-slide1.jpg');
     background-repeat: no-repeat;
     background-position: top right;
+    @include tablets {
+      background-image: url('../img/src/header-slide1-tb.jpg');
+    }
   }
 }
 

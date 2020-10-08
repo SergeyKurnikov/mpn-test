@@ -42,9 +42,9 @@
                 </div>
             </header>
                 <div class="container container-bgc">
-                <h1 class="welcome__title">Многофункциональный жилой квартал <span class="welcome__title-uppercase">Headliner</span></h1>
-                <h3 class="welcome__subtitle">Сдача — 4 кв. 2022, есть сданные</h3>
-            </div>
+                    <h1 class="welcome__title">Многофункциональный жилой квартал <span class="welcome__title-uppercase">Headliner</span></h1>
+                    <h3 class="welcome__subtitle">Сдача — 4 кв. 2022, есть сданные</h3>
+                </div>
                 <div class="slider">
                     <input class="slider__nav" type="radio" name="slider" title="slide1" checked="checked"/>
                     <input class="slider__nav" type="radio" name="slider" title="slide2"/>
@@ -226,19 +226,27 @@
             <section class="section-form">
                 <div class="container">
                     <h2 class="section-title section-title__mt56">Запишитесь на просмотр и оцените всё сами!</h2>
-                    <form class="form" id="mainform">
+                    <form class="form" id="mainform" action="#" method="post">
                         <input class="form__input" type="text" name="username" id="username"  placeholder="Как вас зовут?">
                         <div class="ddl">
-                            <select class="form__input ddl__date" name="date" id="date"></select>
-                            <select class="form__input ddl__time" name="time" id="time"></select>
+                            <input class="form__input ddl__date" name="date" id="date" type="date">
+                            <select class="form__input ddl__time" name="time" id="time">
+                                <option value="4">9:00</option>
+                                <option value="5">10:00</option>
+                                <option value="1">11:00</option>
+                                <option value="2">12:00</option>
+                                <option value="4">14:00</option>
+                                <option value="5">15:00</option>
+                                <option value="1">16:00</option>
+                            </select>
                         </div>
                         <input class="form__input form__input-mb24 " name="phone" type="text" placeholder="Ваш телефон" id="tel">
-                        <label class="form__checkbox" for="notcall">
-                            <input type="checkbox" name="notcall" class="form__checkbox-el" id="notcall">
+                        <label class="form__checkbox" for="remind">
+                            <input type="checkbox" name="remind" class="form__checkbox-el" id="remind">
                             <div class="form__checkbox-fake"></div>
                             <div class="form__radio-text">Напомните мне за 2 часа до визита</div>
                         </label>
-                        <button class="cta-btn cta-btn__send">Отправить</button>
+                        <button class="cta-btn cta-btn__send" type="button" id="mess_send">Отправить</button>
                     </form>
                 </div>
             </section>
@@ -246,7 +254,7 @@
         <footer class="footer">
             <div class="container">
                 <div class="footer__info">
-                    <div class="new__build">
+                    <div class="new-build">
                         <h3 class="new-build__title">Новостройки</h3>
                         <ul class="new-build__list">
                             <li class="new-build__item">
@@ -292,10 +300,10 @@
                     <div class="ad">
                         <h3 class="ad__title">Рекламный отдел</h3>
                         <ul class="ad__list">
-                            <li class="ad__item">
+                            <li class="ad__it">
                                 <a href="tel: +74959874247" class="ad__item-tel">+7 (495) 987-42-47 доб. 501</a>
                             </li>
-                            <li class="ad__item">
+                            <li class="ad__it">
                                 <a href="mailto: kp@novostroy-m.ru" class="ad__item-mail">kp@novostroy-m.ru</a>
                             </li>
                         </ul>
@@ -307,7 +315,31 @@
                 </div>
             </div>
         </footer>
+        <div class="hamburger-menu-link" id="hamburger-menu-link">
+            <div class="hamburger-menu__bars"></div>
+        </div>
+        <div class="hamburger-menu" id="hamburger-menu">
+            <div class="hamburger-menu__items">
+                <nav class="nav nav--hamburger">
+                    <ul class="nav__list nav__list--hamburger" id="nav__list--hamburger">
+                        <li class="nav__item nav__item--hamburger">
+                            <a class="nav__link" href="#two">Описание</a>
+                        </li>
+                        <li class="nav__item nav__item--hamburger">
+                            <a class="nav__link" href="#three">Локация</a>
+                        </li>
+                        <li class="nav__item nav__item--hamburger">
+                            <a class="nav__link" href="#four">Смотрите также</a>
+                        </li>
+                        <li class="nav__item nav__item--hamburger">
+                            <a class="nav__link" href="#five">Запись на просмотр</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </div>
+
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script src="js/app.min.js"></script>
 </body>

@@ -5,10 +5,14 @@
 .btn__list{
   display: flex;
   margin-top: 56px;
+  @include tablets {
+    margin-left: 32px;
+  }
 }
 
 .btn__item:not(:last-child){
   margin-right: 16px;
+
 }
 
 .btn__item-push{
@@ -20,6 +24,10 @@
   border: 1px solid $btn-border;
   border-radius: 28px;
   outline: none;
+  @include tablets{
+    max-width: 165px;
+    font-size: 18px;
+  }
 }
 
 .btn__item-push:hover{
@@ -36,6 +44,10 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 56px;
+  @include tablets{
+    flex-direction: column;
+    margin-left: 32px;
+  }
 }
 
 .pros__list-item, .cons__list-item{
@@ -44,6 +56,12 @@
   //width: 401px;
   font-size: 24px;
   line-height: 32px;
+}
+
+.pros__list-item{
+  @include tablets{
+    margin-bottom: 25px;
+  }
 }
 
 .op-05{

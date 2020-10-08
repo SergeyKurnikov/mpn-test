@@ -15,12 +15,18 @@
 .nav__list{
   display: flex;
   margin-right: 24px;
+  @include phones {
+    display: none;
+  }
 }
 
 .nav__item{
   height: 80px;
   display: flex;
   align-items: center;
+  @include phones{
+
+  }
 }
 
 .nav__item:not(:last-child){

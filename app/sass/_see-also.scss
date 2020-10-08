@@ -2,14 +2,26 @@
   margin-top: 16px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  @include tablets{
+    margin-left: 32px;
+  }
+}
+
+.cards__item:not(:last-child){
+  margin-right: 20px;
 }
 
 .cards__item{
   display: flex;
   flex-direction: column;
   width: 261px;
-  //height: 180px;
+  @include tablets{
+    width: 330px;
+    margin-right: 20px;
+  }
 }
+
 
 .card__img{
   width: 261px;
@@ -19,21 +31,46 @@
   background-blend-mode: screen;
   background-size: cover;
   margin-bottom: 16px;
+  @include tablets{
+    width: 342px;
+    height: 236px;
+  }
 }
 
 .card__img2{
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 47.69%, rgba(0, 0, 0, 0.46) 79.98%),
   url('../img/see-also2.png') 0 0 no-repeat;
+  background-blend-mode: screen;
+  background-size: cover;
+  margin-bottom: 16px;
+  @include tablets{
+    width: 342px;
+    height: 236px;
+  }
 }
 
 .card__img3{
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 47.69%, rgba(0, 0, 0, 0.46) 79.98%),
   url('../img/see-also3.png') 0 0 no-repeat;
+  background-blend-mode: screen;
+  background-size: cover;
+  margin-bottom: 16px;
+  @include tablets{
+    width: 342px;
+    height: 236px;
+  }
 }
 
 .card__img4{
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 47.69%, rgba(0, 0, 0, 0.46) 79.98%),
   url('../img/see-also4.png') 0 0 no-repeat;
+  background-blend-mode: screen;
+  background-size: cover;
+  margin-bottom: 16px;
+  @include tablets{
+    width: 342px;
+    height: 236px;
+  }
 }
 
 .card__icons{
@@ -74,6 +111,9 @@
 
 .card__img-price{
   margin: 88px 0 0 16px;
+  @include tablets{
+    margin-top: 144px;
+  }
 }
 
 .card__img-numb{
@@ -93,6 +133,7 @@
 
 .metro__list-mt2{
   margin-top: 2px;
+  margin-left: 0;
 }
 
 .color-yellow:not(:last-child){

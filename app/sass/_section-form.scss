@@ -19,7 +19,8 @@
   text-align: left;
   background: transparent;
   border: none;
-  border-bottom: 1px solid $hover-line;
+  border-bottom: 1px solid;
+  border-color: $hover-line;
   outline: none;
   padding: 15px 0;
   color: $text-color-light;
@@ -47,11 +48,17 @@
   width: 261px;
   appearance: none;
   background: url('../img/ddl-arrow.svg') right / 8px no-repeat;
+
 }
 
 .form__input-mb24{
   margin-bottom: 24px;
+  outline: none;
 }
+.ddl__date::-webkit-calendar-picker-indicator{
+  opacity: 0;
+}
+
 
 .form__checkbox{
   margin-bottom: 24px;
@@ -99,6 +106,7 @@
   background-color: $text-color-light;
   opacity: 0.5;
   color: $bg-color-dark;
+  outline: none;
 }
 
 .cta-btn__send:hover {

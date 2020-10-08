@@ -1,12 +1,19 @@
+
 .section-title__loc{
   font-family: 'Roboto-Light';
   font-size: 32px;
   line-height: 40px;
   color: $text-color-dark;
   margin-top: 56px;
+  @include tablets{
+    margin-left: 32px;
+  }
 }
 .location__adress{
   margin-top: 16px;
+  @include tablets{
+    margin-left: 32px;
+  }
 }
 
 .metro__list{
@@ -14,6 +21,9 @@
   display: flex;
   align-items: center;
   line-height: 24px;
+  @include tablets{
+    margin-left: 32px;
+  }
 }
 
 .metro__list-item{

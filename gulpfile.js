@@ -63,6 +63,7 @@ function cleandist() {
 
 function buildcopy() {
     return src([
+        'app/ajax/**/*.php',
         'app/fonts/**/*.ttf',
         'app/css/**/*.min.css',
         'app/js/**/*.min.js',
